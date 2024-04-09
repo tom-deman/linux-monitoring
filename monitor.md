@@ -32,7 +32,7 @@ You can then press SHIFT M to order by the most intense first.
 
 <br>
 
-For Htop it's also simple to launch:
+For htop it's also simple to launch:
 
 ```bash
     htop
@@ -47,7 +47,7 @@ For Htop it's also simple to launch:
 
 To show log you can simply cat them or less or whatever you want. It could be useful to combine grep to find specific terms.
 
-Here's a list of the most commons and important logs in Linux:
+Here's a list of the most commons and important logs on Linux:
 
 - __/var/log/syslog__ General overview of system activity. Including kernel messages, system startups, shutdowns, and hardware-related messages. (sometimes located at /var/log/messages)
 
@@ -57,7 +57,8 @@ Here's a list of the most commons and important logs in Linux:
 
 - __/var/log/boot.log__ This log file contains messages generated during the system boot process. It can be useful for troubleshooting boot-related issues and understanding the sequence of events during system startup.
 
-- __/var/log/cron__ This log file contains messages related to the cron scheduler, including scheduled task executions, cron job failures, and other cron-related events. On my Linux Mint I don't have this file so I used:
+- __/var/log/cron__ This log file contains messages related to the cron scheduler, including scheduled task executions, cron job failures, and other cron-related events. On my Linux Mint I don't have this file, so I used:
+
 ```bash
     grep CRON /var/log/syslog
 ```
@@ -75,13 +76,13 @@ can also be used to see logs.
 
 ## Last logged user
 
-We have several commands to see informations about users:
+We have several commands to see data about users:
 
 ```bash
     last
 ```
 
-Display a list of the last logged in users with informations such as ip address and logging duration time.
+Display a list of the last logged-in users with data such as ip address and logging duration time.
 
 <br>
 
@@ -105,15 +106,15 @@ Whoami will simply give you who you actually are while who will additionally giv
 lastlog
 ```
 
-Can be useful too to log the users last logged sessions. Can be used with paramters to see specific user like: sudo lastlog -u 0
+Can be useful too to log the user's last logged sessions. Can be used with parameters to see specific user like: sudo lastlog -u 0
 
 <br>
 <br>
 
 ## Health metrics
 
-There's a lot of differentz health metrics for a system.
-The two main ones that comes in my mind are CPU and Memory but many mores exist so here's a list of some popular ones (for the packet not already installed you can type apt search 'keyword'):
+There's a lot of differents health metrics for a system.
+The two main one that comes to my mind are CPU and Memory, but many mores exist, so here's a list of some popular ones (for the packet not already installed you can type apt search 'keyword'):
 
 - __CPU Usage__: This metric indicates the percentage of CPU resources being utilized. High CPU usage may indicate that the system is under heavy processing load, which could lead to performance degradation.
 
@@ -155,7 +156,7 @@ The two main ones that comes in my mind are CPU and Memory but many mores exist 
 
 <br>
 
-- __Process Activity__: Lists information about active processes, including process IDs, CPU and memory usage, and command names.
+- __Process Activity__: Lists data about active processes, including process IDs, CPU and memory usage, and command names.
 
 ```bash
     ps aux
@@ -197,7 +198,7 @@ List disk free space:
 
 <br>
 
-There's a lot more tools listed on this website:
+There are a lot more tools listed on this website:
 
 https://www.ubuntupit.com/best-linux-monitoring-tools-for-sysadmin/
 
